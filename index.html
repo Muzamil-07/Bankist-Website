@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- TODO: ------------------- Required meta tags ------------------>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--TODO:----- Google Fonts(Optional) Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--TODO:----- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--TODO:----- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!--TODO:------------- Custom Personalize css  -------------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    <!--TODO:-------------- Animation.css links(Please Include anim folder)  -------------->
+    <link rel="stylesheet" href="anim/css/libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <title>Bankist</title>
+    <!--TODO:------ Adding icon of Max size of (100 X 100) in Tab bar -->
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+
+
+    <!--Fix:******************* Navbar ***********************-->
+
+    <nav class="navbar navbar-nav navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand " href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav_options" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  nav_options" href="#operations" tabindex="-1"
+                            aria-disabled="true">Operations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  nav_options" href="#testimonials" tabindex="-1"
+                            aria-disabled="true">Testimonials</a>
+                    </li>
+
+
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link nav_btn " data-toggle="modal" data-target="#exampleModalCenter1">My
+                            account</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <a class="" data-toggle="modal" data-target="#exampleModalCenter1">
+        <div class="nav-item d-lg-none text-center nav_btn2">
+            My account
+        </div>
+    </a>
+
+    <!--FIX**************** Modal*************************** -->
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle2">Enter your credentials to <span
+                            class="highlight">log in</span></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mod_in"><span class="inp_text">User Name</span></div>
+                        <div class="col-12 col-sm-6 mod_in"><input type="text" class="inp_field"></div>
+
+                        <div class="col-12 col-sm-6 mod_in"><span class="inp_text">Password</span></div>
+                        <div class="col-12 col-sm-6 mod_in"><input type="password" class="inp_field"></div>
+
+                    </div>
+                    <div class="modalbutton"><a class="modal_btn ">Log in →</a></div>
+                    <div class="validity_msg"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle2">Open your bank account
+                        in just <span class="highlight">5 minutes</span></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mod_in"><span class="inp_text">First Name</span></div>
+                        <div class="col-12 col-sm-6 mod_in"><input type="text" class="inp_field"></div>
+
+                        <div class="col-12 col-sm-6 mod_in"><span class="inp_text">Last Name</span></div>
+                        <div class="col-12 col-sm-6 mod_in"><input type="text" class="inp_field"></div>
+
+                        <div class="col-12 col-sm-6 mod_in"><span class="inp_text">Email Address</span></div>
+                        <div class="col-12 col-sm-6 mod_in"><input type="text" class="inp_field"></div>
+
+                    </div>
+                    <div class="modalbutton"><a class="modal_btn ">Next Step →</a></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fix***********  Landing Page  ********* -->
+
+    <div class="row landing_page">
+        <div class="col-12 col-lg-7 landing_left">
+            <h1 class="landing_heading">When <span class="highlight hl1">banking</span> meets</h1>
+            <h1 class="landing_heading"><span class="highlight hl2">minimalist</span></h1>
+            <p class="landing_para">A simpler banking experience for a simpler life.</p>
+            <a href="" class="landing_link">Learn more ↓</a>
+        </div>
+        <div class="col-12 col-lg-5 landing_right">
+            <img src="img/hero.png" class="img-fluid landing_img" alt="">
+        </div>
+    </div>
+
+
+
+    <!--FIX***************** Features Section *********************** -->
+    <div class="section features section_hidden" id="features">
+        <hr>
+
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h5 class="section_heading">FEATURES</h5>
+                <h2 class="section_para">Everything you need in a modern bank and more.</h2>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container features_content">
+            <div class="row">
+                <div class="col-12 col-sm-6 r1">
+                    <img src="img/digital-lazy.jpg" data-src="img/digital.jpg"
+                        class="img-fluid waves-effect waves-light blur_img" alt="">
+                </div>
+                <div class="col-12 col-sm-6 r1 pl-5">
+                    <div class="features_circle cr1"></div>
+                    <h5 class="features_heading">100% digital bank</h5>
+                    <p class="features_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint quos?
+                        Accusantium a fugiat porro reiciendis
+                        saepe quibusdam debitis ducimus
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-12 col-sm-6 r2 pl-5">
+                    <div class="features_circle"></div>
+                    <h5 class="features_heading">Watch your money grow</h5>
+                    <p class="features_para">
+                        Nesciunt quos autem dolorum voluptates cum dolores dicta fuga inventore ab? Nulla incidunt
+                        eius
+                        numquam sequi iste pariatur quibusdam!
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 r2">
+                    <img src="img/grow-lazy.jpg" data-src="img/grow.jpg"
+                        class="img-fluid waves-effect waves-light blur_img" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-12 col-sm-6 r3">
+                    <img src="img/card-lazy.jpg" data-src="img/card.jpg"
+                        class="img-fluid waves-effect waves-light blur_img" alt="">
+                </div>
+                <div class="col-12 col-sm-6 r3 pl-5">
+                    <div class="features_circle"></div>
+                    <h5 class="features_heading">Free debit card included</h5>
+                    <p class="features_para">
+                        Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim eveniet consequatur odit
+                        quam
+                        quos possimus assumenda
+                        dicta fuga inventore ab.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--FIX***************** operation Section *********************** -->
+
+    <div class="section operations section_hidden" id="operations">
+        <hr>
+
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h5 class="section_heading mb-3">OPERATIONS</h5>
+                <h2 class="section_para">Everything as simple as possible, but no simpler.</h2>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center operations_tab">
+            <div class="operations_btn_container">
+                <a href=" " class="operations_btn transfer_btn " data-tab="1">01 Instant Transfers</a>
+                <a href=" " class="operations_btn loan_btn active" data-tab="2">02 Instant Loans</a>
+                <a href=" " class="operations_btn close_btn" data-tab="3">03 Instant Closing</a>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="tab_content col-9">
+                <div class="container">
+                    <div class="operations_val row transfer_val hidden val_1">
+                        <div class="transfer_circle"></div>
+
+                        <h4> Tranfser money to anyone, instantly! No fees, no
+                            BS.
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                            ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea
+                            commodo consequat.
+                        </p>
+
+                    </div>
+
+
+                    <div class="operations_val row loan_val val_2 ">
+                        <div class="loan_circle"></div>
+
+                        <h4> Buy a home or make your dreams come true, with instant loans.
+                        </h4>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                        </p>
+
+                    </div>
+
+                    <div class="operations_val row close_val hidden val_3">
+                        <div class="close_circle"></div>
+
+                        <h4> No longer need your account? No problem! Close it instantly
+                        </h4>
+                        <p>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--FIX:*************  Testimonials **************** -->
+
+    <div class="section tetimonials section_hidden" id="testimonials">
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h5 class="section_heading mb-3">NOT SURE YET?</h5>
+                <h2 class="section_para">Millions of Bankists are already making their lifes simpler.</h2>
+            </div>
+        </div>
+
+
+
+        <!-- ***************!!!!!! Slider !!!!!!!*********** -->
+
+
+
+
+
+
+        <div class="slider text-justify">
+
+            <div class="slide slide_1 col-12 ">
+                <h4 class="slide_head">Best financial decision ever!</h4>
+                <p class="slide_para">
+
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non?
+                    Quas
+                    voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium
+                    suscipit blanditiis.
+                    Necessitatibus id alias reiciendis, perferendis facere pariatur dolore veniam autem esse non
+                    voluptatem saepe provident
+                    nihil molestiae.
+                </p>
+
+                <div class="row">
+                    <div><img class="slide_img rounded-circle img-fluid" src="img/user-1.jpg" alt=""></div>
+                    <div>
+                        <h5 class="user_name">Aarav Lynn</h5>
+                        <p class="user_address">San Francisco, USA</p>
+                    </div>
+                </div>
+
+                <!-- <img src="img/img-1.jpg" class="img-fluid yes" alt="Photo 1" /> -->
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="slide slide_2  col-12 ">
+                <h4 class="slide_head">The last step to becoming a complete minimalist</h4>
+                <p class="slide_para">
+
+                    Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi
+                    voluptatibus doloremque,
+                    corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor
+                    sit amet consectetur
+                    adipisicing elit. Illo deserunt exercitationem deleniti.
+                </p>
+                <div class="row">
+                    <div><img class="slide_img rounded-circle img-fluid" src="img/user-2.jpg" alt=""></div>
+                    <div>
+                        <h5 class="user_name">Miyah Miles</h5>
+                        <p class="user_address">London, UK</p>
+                    </div>
+                </div>
+
+
+
+                <!-- <img src="img/img-2.jpg" class="img-fluid yes" alt="Photo 2" /> -->
+            </div>
+
+
+
+
+
+
+            <div class="slide slide_3  col-12 ">
+                <h4 class="slide_head">Finally free from old-school banks</h4>
+                <p class="slide_para">
+
+                    Debitis, nihil sit minus suscipit magni aperiam vel tenetur incidunt commodi architecto numquam
+                    omnis nulla autem,
+                    necessitatibus blanditiis modi similique quidem. Odio aliquam culpa dicta beatae quod maiores
+                    ipsa minus consequatur
+                    error sunt, deleniti saepe aliquid quos inventore sequi. Necessitatibus id alias reiciendis,
+                    perferendis facere.
+                </p>
+                <div class="row">
+                    <div><img class="slide_img rounded-circle img-fluid" src="img/user-3.jpg" alt=""></div>
+                    <div>
+                        <h5 class="user_name">Francisco Gomes</h5>
+                        <p class="user_address">Lisbon, Portugal</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img src="img/img-3.jpg" class="img-fluid yes" alt="Photo 3" /> -->
+        </div>
+
+
+        <button class="left_arrow arrow">←</button>
+        <button class="right_arrow arrow">→</button>
+
+        <div class="row justify-content-center mx-auto dots_container">
+            <!-- <a href="#" data-slide="0" class="dots dot_0 dot_active"></a>
+            <a href="#" data-slide="1" class="dots dot_1"></a>
+            <a href="#" data-slide="2" class="dots dot_2"></a> -->
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <footer class="section section_hidden">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+
+                    <h2 class="section_para">The best day to join Bankist was one year ago. The second best is
+                        today!
+                    </h2>
+                    <div class="text-center"><button class="footer_btn" data-toggle="modal"
+                            data-target="#exampleModalCenter2">Open your free account today!</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="footer_navs text-center">
+            <a href="####">About</a>
+            <a href="####">Pricing</a>
+            <a href="####">Term of Use</a>
+            <a href="####">Privacy Policy</a>
+            <a href="####">Careers</a>
+            <a href="####">Blog</a>
+            <a href="####">Contact Us</a>
+        </div>
+
+        <div class="text-center footer_img">
+            <img src="img/icon.png" alt="" width="50px" height="50px">
+        </div>
+
+        <div class="text-center">
+            <p class="copyright">© Copyright from Jonas Schmedtmann. Use for learning or for portfolio
+                product</p>
+        </div>
+    </footer>
+
+
+
+
+    <!--TODO:----- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--TODO:----- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!--TODO:----- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--TODO:----- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!--TODO:----- Customize(User) JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <!--TODO:------------ Font awesome icons link  -------------->
+    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+    <!--TODO:---------- Wow.js link and then script for scrolling animation  -------------->
+    <script src="anim/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
